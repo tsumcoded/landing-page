@@ -1,0 +1,74 @@
+/* TEMPLATE-LIKE DECLARATIONS */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* DEBUGGING */
+
+* {
+    outline: 2px solid red;
+}
+
+/* HEADER */
+
+header {
+    background: #1F2937;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hl {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.button-top {
+    background: #3882F6;
+}
+
+/* INFO */
+
+.info h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+/* QUOTE */
+
+.quote {
+    background: #E5E7EB;
+}
+
+.text {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+}
+
+/* CALL TO ACTION */
+
+.call {
+    background: #3882F6;
+}
