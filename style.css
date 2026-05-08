@@ -90,7 +90,7 @@ header {
     border: none;
 }
 
-/* HEADER-NAV */
+/* HEADER-NAV: DONE */
 
 nav {
     display: flex;
@@ -121,16 +121,33 @@ nav ul:hover {
     font-weight: 900;
 }
 
-/* QUOTE */
+/* QUOTE: DONE */
 
 .quote {
     background: #E5E7EB;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 0;
+    gap: 16px;
 }
 
 .text {
     font-size: 36px;
     color: #1F2937;
     font-weight: 300;
+    font-style: italic;
+    margin: 0;
+}
+
+.author {
+    font-weight: 800;
+    margin: 0;
+    align-self: flex-end;
 }
 
 /* CALL TO ACTION */
