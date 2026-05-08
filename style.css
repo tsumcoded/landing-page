@@ -150,10 +150,42 @@ nav ul:hover {
     align-self: flex-end;
 }
 
-/* CALL TO ACTION */
+/* CALL TO ACTION: DONE */
 
 .call {
     background: #3882F6;
+    margin: 75px 150px;
+    border-radius: 8px;
+    display: flex;
+    padding: 32px 64px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cl {
+    color: #F9FAF8;
+    margin: 0;
+}
+
+.cl h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.cl p {
+    font-weight: 200;
+    margin: 0;
+}
+
+.button-bottom {
+    background: #3882F6;
+    align-self: flex-start;
+    padding: 8px 32px;
+    border-radius: 8px;
+    color: #F9FAF8;
+    font-weight: 800;
+    border: 2px solid white;
+    align-self: center;
 }
 
 /* FOOTER: DONE */
