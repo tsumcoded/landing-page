@@ -1,4 +1,4 @@
-/* TEMPLATE-LIKE DECLARATIONS */
+/* DOCUMENT */
 
 html {
     box-sizing: border-box;
@@ -18,7 +18,7 @@ body {
     flex-direction: column;
 }
 
-/* GENERAL */
+/* PAGE */
 
 header,
 .info,
@@ -28,31 +28,43 @@ footer {
     padding: 0 150px;
 }
 
-/* HEADER: DONE */
+/* HEADER */
+
+.hero,
+.hl,
+.figure {
+    display: flex;
+}
 
 header {
     background: #1F2937;
 }
 
-.logo {
-    font-size: 24px;
+.logo,
+.figure,
+.figure h1,
+.button-top,
+.button-bottom {
     color: #F9FAF8;
 }
 
+
+.logo {
+    font-size: 24px;
+}
+
 .hero {
-    display: flex;
     gap: 16px;
     margin: 64px 0;
 }
 
 .hero h1 {
     font-size: 48px;
-    color: #F9FAF8;
     font-weight: 900;
-    margin: 0;
 }
 
-.hero p {
+.hero p,
+.hero h1 {
     margin: 0;
 }
 
@@ -60,41 +72,49 @@ header {
     font-size: 18px;
     color: #E5E7EB;
     flex: 1;
-    display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
 .figure {
     background: #63686e;
-    color: #F9FAF8;
     flex: 1;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.button-top {
+.button-top,
+.button-bottom {
     background: #3882F6;
     align-self: flex-start;
     padding: 8px 32px;
     border-radius: 8px;
-    color: #F9FAF8;
     font-weight: 800;
+}
+
+.button-top {
     border: none;
 }
 
-/* HEADER-NAV: DONE */
+.button-bottom {
+    border: 2px solid #F9FAF8;
+    align-self: center;
+}
+
+/* HEADER-NAV */
+
+nav,
+nav ul {
+    display: flex;
+}
 
 nav {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 16px 0;
 }
 
 nav ul {
-    display: flex;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -107,14 +127,23 @@ nav ul:hover {
     cursor: pointer;
 }
 
-/* INFO: DONE */
+/* INFO */
 
-.info {
-    padding: 64px 150px;
+.info,
+.content,
+.item {
     display: flex;
+}
+
+.info,
+.item {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.info {
+    padding: 64px 150px;
     gap: 32px;
 }
 
@@ -133,15 +162,10 @@ nav ul:hover {
 }
 
 .content {
-    display: flex;
     justify-content: space-between;
 }
 
 .item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 8px;
 }
 
@@ -150,7 +174,7 @@ nav ul:hover {
     text-align: center;
 }
 
-/* QUOTE: DONE */
+/* QUOTE */
 
 .quote {
     background: #E5E7EB;
@@ -165,21 +189,24 @@ nav ul:hover {
     gap: 16px;
 }
 
+.text,
+.author {
+    margin: 0;
+}
+
 .text {
     font-size: 36px;
     color: #1F2937;
     font-weight: 300;
     font-style: italic;
-    margin: 0;
 }
 
 .author {
     font-weight: 800;
-    margin: 0;
     align-self: flex-end;
 }
 
-/* CALL TO ACTION: DONE */
+/* CALL TO ACTION */
 
 .call {
     background: #3882F6;
@@ -191,33 +218,25 @@ nav ul:hover {
     align-items: center;
 }
 
+.cl,
+.cl h3,
+.cl p {
+    margin: 0;
+}
+
 .cl {
     color: #F9FAF8;
-    margin: 0;
 }
 
 .cl h3 {
     font-size: 24px;
-    margin: 0;
 }
 
 .cl p {
     font-weight: 200;
-    margin: 0;
 }
 
-.button-bottom {
-    background: #3882F6;
-    align-self: flex-start;
-    padding: 8px 32px;
-    border-radius: 8px;
-    color: #F9FAF8;
-    font-weight: 800;
-    border: 2px solid white;
-    align-self: center;
-}
-
-/* FOOTER: DONE */
+/* FOOTER */
 
 footer {
     background: #1F2937;
